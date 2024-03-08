@@ -5,14 +5,14 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) =>
 {
     return (
         <article className="CardItem">
-            <header className="Header">
+            <header>
                 <h2 className="ItemHeader">
                     {name}
                 </h2>
             </header>
-
+                
             <picture>
-                <img src={img} alt={name} className="ItemImg" />
+                <img src={img} alt={name} style={{width: 100}} className="ItemImg" />
             </picture>
 
             <section>

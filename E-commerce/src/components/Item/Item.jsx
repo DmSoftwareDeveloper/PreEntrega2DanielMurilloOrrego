@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 /* eslint-disable react/jsx-no-undef */
 // eslint-disable-next-line react/prop-types
 const Item = ({id, name, img, price, stock}) => 
@@ -11,7 +13,7 @@ const Item = ({id, name, img, price, stock}) =>
             </header>
 
             <picture>
-                <img src={img} alt={name} className="ItemImg" />
+                <img src={img} alt={name} style={{width: 100}} className="ItemImg" />
             </picture>
 
             <section>
